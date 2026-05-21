@@ -1,12 +1,12 @@
 package net.dante.items;
 
-public class BookItem extends LibraryItem{
+public class Book extends LibraryItem {
 
     private String author;
     private String genre;
     private int pages;
 
-    public BookItem(String id, String title, boolean isAvailable, String author, String genre, int pages) {
+    public Book(String id, String title, boolean isAvailable, String author, String genre, int pages) {
         super(id, title, isAvailable);
         this.author = author;
         this.genre = genre;
