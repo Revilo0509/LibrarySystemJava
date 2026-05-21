@@ -1,5 +1,6 @@
 package net.dante;
 
+import net.dante.client.Client;
 import net.dante.menu.Menu;
 import net.dante.menu.MenuItem;
 
@@ -9,11 +10,16 @@ till andra klasser som hanterar programmets logik */
 public class Main {
     void main() {
 
-        LibraryManager manager = new LibraryManager("http://localhost:3000");
+        Client client = new Client("http://localhost:3000");
+        LibraryManager manager = new LibraryManager(client);
 
         Menu menu = new Menu("Biblioketsystem");
 
         {
+            menu.registerMenuItem(
+                    new MenuItem("Hämta data för samtliga böcker", () -> IO.println("Hämtade data för böcker\n")));
+            menu.registerMenuItem(
+                    new MenuItem("Hämta data för samtliga magasin", () -> IO.println("Hämtade data för magasin\n")));
             menu.registerMenuItem(new MenuItem("Lista bibliotekets böcker och magasin", manager::listLibraryItems));
             menu.registerMenuItem(new MenuItem("Registrera nytt föremål i systemet", manager::addLibraryItem));
             menu.registerMenuItem(new MenuItem("Registrera ny användare i systemet", manager::addUser));

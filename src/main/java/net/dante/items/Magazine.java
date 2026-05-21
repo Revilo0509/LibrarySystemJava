@@ -6,9 +6,9 @@ public class Magazine extends LibraryItem {
     private int publishedYear;
     private String category;
 
-    public Magazine(String id, String title, boolean isAvailable, int issueNumber, int publicationYear,
+    public Magazine(String title, boolean isAvailable, int issueNumber, int publicationYear,
             String category) {
-        super(id, title, isAvailable);
+        super(title, isAvailable);
         this.issueNumber = issueNumber;
         this.publishedYear = publicationYear;
         this.category = category;
