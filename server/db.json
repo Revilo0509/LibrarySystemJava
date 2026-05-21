@@ -1,8 +1,10 @@
 {
-    "$schema": ["./node_modules/json-server/schema.json"],
+    "$schema": [
+        "./node_modules/json-server/schema.json"
+    ],
     "books": [
         {
-            "id": "1",
+            "id": "b3482a0c-29f1-47bc-b5f2-07e64c13f7a8",
             "title": "Ringo with License to Please",
             "author": "Daniel Harper",
             "genre": "Crime",
@@ -10,7 +12,7 @@
             "isAvailable": true
         },
         {
-            "id": "2",
+            "id": "da74b8cb-ddc7-4aa5-99d6-e35024bfb455",
             "title": "Ringo Can Read",
             "author": "Daniel Harper",
             "genre": "Drama",
@@ -18,7 +20,7 @@
             "isAvailable": true
         },
         {
-            "id": "3",
+            "id": "5ce82c7f-fa03-4c7d-a34a-53aee10c0f70",
             "title": "The Silent Witness",
             "author": "Elias Thorne",
             "genre": "Crime",
@@ -26,7 +28,7 @@
             "isAvailable": true
         },
         {
-            "id": "4",
+            "id": "f8fabb9f-17e6-4b1a-9961-837ec9c36b88",
             "title": "Shadows in the Fog",
             "author": "Sarah Jenkins",
             "genre": "Mystery",
@@ -34,7 +36,7 @@
             "isAvailable": true
         },
         {
-            "id": "5",
+            "id": "1e0c60af-e453-403f-b07e-b5b5251f846e",
             "title": "Beyond the Horizon",
             "author": "Marcus Vane",
             "genre": "Adventure",
@@ -42,7 +44,7 @@
             "isAvailable": true
         },
         {
-            "id": "6",
+            "id": "dfeb35f5-3aef-418b-8a1b-b2962667ae1e",
             "title": "Love in Autumn",
             "author": "Elena Rossi",
             "genre": "Romance",
@@ -50,7 +52,7 @@
             "isAvailable": true
         },
         {
-            "id": "7",
+            "id": "53b42af4-8a5e-4add-937f-5568280da7a0",
             "title": "The Last Kingdom",
             "author": "Julian Blackwood",
             "genre": "Fantasy",
@@ -58,7 +60,7 @@
             "isAvailable": true
         },
         {
-            "id": "8",
+            "id": "f988de90-2264-4d81-bae1-2e0f78693721",
             "title": "Midnight Streets",
             "author": "Victor Cross",
             "genre": "Thriller",
@@ -66,7 +68,7 @@
             "isAvailable": true
         },
         {
-            "id": "9",
+            "id": "e74e73ee-d918-4297-b683-6c5446508e02",
             "title": "The Hidden Code",
             "author": "Aria Sterling",
             "genre": "Science Fiction",
@@ -74,7 +76,7 @@
             "isAvailable": true
         },
         {
-            "id": "10",
+            "id": "efa042a3-ece6-4609-af7c-51b19f310f8a",
             "title": "Broken Promises",
             "author": "Liam O'Connor",
             "genre": "Drama",
@@ -82,7 +84,7 @@
             "isAvailable": true
         },
         {
-            "id": "11",
+            "id": "726259ca-1760-415c-9221-494e7810413e",
             "title": "The Secret Garden Path",
             "author": "Isabella Finch",
             "genre": "Romance",
@@ -90,7 +92,7 @@
             "isAvailable": true
         },
         {
-            "id": "12",
+            "id": "4081cf49-3f9f-4673-aab4-9674ab8909ae",
             "title": "Fire Over the Mountains",
             "author": "Nathan Drake",
             "genre": "Adventure",
@@ -98,7 +100,7 @@
             "isAvailable": true
         },
         {
-            "id": "13",
+            "id": "c1db3ba0-68d3-49cd-8dc1-c06707b6f189",
             "title": "The Empty Room",
             "author": "Silas Graves",
             "genre": "Horror",
@@ -106,7 +108,7 @@
             "isAvailable": true
         },
         {
-            "id": "14",
+            "id": "a34df8ea-cbd5-44a5-9985-49ce65e11327",
             "title": "A Winter to Remember",
             "author": "Thomas Hardy",
             "genre": "Drama",
@@ -114,7 +116,7 @@
             "isAvailable": true
         },
         {
-            "id": "15",
+            "id": "25ff84f6-d194-454a-a4ab-4da43501edd5",
             "title": "The Iron Crown",
             "author": "Morgana Le Fay",
             "genre": "Fantasy",
@@ -122,7 +124,7 @@
             "isAvailable": true
         },
         {
-            "id": "16",
+            "id": "1b27d3f8-22f3-4453-ab63-95920497caad",
             "title": "Dark Waters",
             "author": "Robert Storm",
             "genre": "Thriller",
@@ -130,7 +132,7 @@
             "isAvailable": true
         },
         {
-            "id": "17",
+            "id": "157f0aaf-2950-425e-8874-f113690065ec",
             "title": "The Lost Planet",
             "author": "Isaac Asimov",
             "genre": "Science Fiction",
@@ -138,7 +140,7 @@
             "isAvailable": true
         },
         {
-            "id": "18",
+            "id": "3e760fdf-2806-40bf-a6ee-d5e41b1db29d",
             "title": "Echoes of Yesterday",
             "author": "Catherine Wells",
             "genre": "Drama",
@@ -146,7 +148,7 @@
             "isAvailable": true
         },
         {
-            "id": "19",
+            "id": "2e47bf07-d175-4b34-803a-8034a8dca701",
             "title": "The Golden Compass Rose",
             "author": "Arthur West",
             "genre": "Adventure",
@@ -154,7 +156,7 @@
             "isAvailable": true
         },
         {
-            "id": "20",
+            "id": "cf9ba5a2-adf7-47e5-b481-a8fce7221403",
             "title": "Whispers at Dawn",
             "author": "Clara Oswald",
             "genre": "Mystery",
@@ -162,7 +164,7 @@
             "isAvailable": true
         },
         {
-            "id": "21",
+            "id": "70bd97a2-3a64-4f1e-89cf-92a123a08bee",
             "title": "Moonlight Sonata",
             "author": "Sophia Loren",
             "genre": "Romance",
@@ -170,7 +172,7 @@
             "isAvailable": true
         },
         {
-            "id": "22",
+            "id": "81314352-f271-4ab4-b38e-97deda11279a",
             "title": "The Forgotten Castle",
             "author": "Ewan McGregor",
             "genre": "Fantasy",
@@ -178,7 +180,7 @@
             "isAvailable": true
         },
         {
-            "id": "23",
+            "id": "18dca001-8177-4528-aa37-5293f313c2ce",
             "title": "Dead End Road",
             "author": "John Rebus",
             "genre": "Crime",
@@ -186,7 +188,7 @@
             "isAvailable": true
         },
         {
-            "id": "24",
+            "id": "8323ddbe-33c7-4210-a2cc-80f2118b7bb2",
             "title": "Stormbreaker Island",
             "author": "Anthony Horowitz",
             "genre": "Adventure",
@@ -194,7 +196,7 @@
             "isAvailable": true
         },
         {
-            "id": "25",
+            "id": "bd210f95-ce4a-4b69-a675-217a8e00d12c",
             "title": "The Glass Key",
             "author": "Dashiell Hammett",
             "genre": "Mystery",
@@ -202,7 +204,7 @@
             "isAvailable": true
         },
         {
-            "id": "26",
+            "id": "83b3e016-69ec-41dc-8d52-b6155df9ee65",
             "title": "City of Ashes",
             "author": "Cassandra Clare",
             "genre": "Fantasy",
@@ -210,7 +212,7 @@
             "isAvailable": true
         },
         {
-            "id": "27",
+            "id": "54d2b753-b812-4a2a-b2eb-2144b2e5b991",
             "title": "The Crimson Hour",
             "author": "Stephen King",
             "genre": "Horror",
@@ -218,7 +220,7 @@
             "isAvailable": true
         },
         {
-            "id": "28",
+            "id": "5935839c-b800-4cef-b0a4-b13d8da284ea",
             "title": "Threads of Fate",
             "author": "Margaret Atwood",
             "genre": "Drama",
@@ -226,7 +228,7 @@
             "isAvailable": true
         },
         {
-            "id": "29",
+            "id": "63dfecda-6be5-416e-911f-ead183629fe5",
             "title": "The Quantum Voyage",
             "author": "Carl Sagan",
             "genre": "Science Fiction",
@@ -234,7 +236,7 @@
             "isAvailable": true
         },
         {
-            "id": "30",
+            "id": "5f65e275-18d5-4295-82d4-a86cc444b431",
             "title": "A Place Called Home",
             "author": "Nicholas Sparks",
             "genre": "Romance",
@@ -242,7 +244,7 @@
             "isAvailable": true
         },
         {
-            "id": "31",
+            "id": "a4fce743-82b1-41ab-b2f3-777cf5e357a2",
             "title": "Beneath the Ice",
             "author": "Jo Nesbø",
             "genre": "Thriller",
@@ -250,7 +252,7 @@
             "isAvailable": true
         },
         {
-            "id": "32",
+            "id": "363aef1a-ca80-420b-88f1-67897d850a1d",
             "title": "The Raven's Mark",
             "author": "Edgar Allan Poe",
             "genre": "Fantasy",
@@ -258,7 +260,7 @@
             "isAvailable": true
         },
         {
-            "id": "33",
+            "id": "4e906cf1-a821-4b26-b01f-734b0240682c",
             "title": "Crossing the Line",
             "author": "Michael Connelly",
             "genre": "Crime",
@@ -266,7 +268,7 @@
             "isAvailable": true
         },
         {
-            "id": "34",
+            "id": "da74415d-47ea-46f3-94ba-368bed69c18a",
             "title": "The Last Broadcast",
             "author": "Philip K. Dick",
             "genre": "Science Fiction",
@@ -274,7 +276,7 @@
             "isAvailable": true
         },
         {
-            "id": "35",
+            "id": "c7db57f5-5356-44a4-bddc-d4fcb5ed4d1d",
             "title": "Summer of Secrets",
             "author": "Liane Moriarty",
             "genre": "Drama",
@@ -282,7 +284,7 @@
             "isAvailable": true
         },
         {
-            "id": "36",
+            "id": "a0f8fcaa-9925-4f74-8c83-943e8d8db956",
             "title": "The Hollow Tree",
             "author": "H.P. Lovecraft",
             "genre": "Horror",
@@ -290,7 +292,7 @@
             "isAvailable": true
         },
         {
-            "id": "37",
+            "id": "86986584-4911-41d1-b963-bf75c8725e31",
             "title": "Map of the Stars",
             "author": "Jules Verne",
             "genre": "Adventure",
@@ -298,7 +300,7 @@
             "isAvailable": true
         },
         {
-            "id": "38",
+            "id": "261142de-2f9e-4d61-ab05-d869c9204b14",
             "title": "The Velvet Letter",
             "author": "Jane Austen",
             "genre": "Romance",
@@ -306,7 +308,7 @@
             "isAvailable": true
         },
         {
-            "id": "39",
+            "id": "883c08bf-4542-4f32-9be0-46753ac4de20",
             "title": "No Turning Back",
             "author": "Lee Child",
             "genre": "Thriller",
@@ -314,7 +316,7 @@
             "isAvailable": true
         },
         {
-            "id": "40",
+            "id": "b291d7ca-34a3-40ce-99a2-df15b60b9211",
             "title": "The Crystal Empire",
             "author": "Brandon Sanderson",
             "genre": "Fantasy",
@@ -322,7 +324,7 @@
             "isAvailable": true
         },
         {
-            "id": "41",
+            "id": "c39e22c3-cd5d-4de5-9f68-e7613df71a81",
             "title": "Fragments of Truth",
             "author": "Agatha Christie",
             "genre": "Mystery",
@@ -330,7 +332,7 @@
             "isAvailable": true
         },
         {
-            "id": "42",
+            "id": "ed8a3cbd-3526-437a-8ae2-8208725c9516",
             "title": "Under Scarlet Skies",
             "author": "Nora Roberts",
             "genre": "Romance",
@@ -338,7 +340,7 @@
             "isAvailable": true
         },
         {
-            "id": "43",
+            "id": "0d5ee206-4d4e-4c43-9558-cf65b01a8be3",
             "title": "The Machine Awakens",
             "author": "Arthur C. Clarke",
             "genre": "Science Fiction",
@@ -346,7 +348,7 @@
             "isAvailable": true
         },
         {
-            "id": "44",
+            "id": "40262a83-0faf-4269-9675-ae55279cf0a6",
             "title": "The Broken Compass",
             "author": "Bear Grylls",
             "genre": "Adventure",
@@ -354,7 +356,7 @@
             "isAvailable": true
         },
         {
-            "id": "45",
+            "id": "ad450cab-2f1e-4e7e-b598-c0bb69bac5bb",
             "title": "Cold Case River",
             "author": "Ian Rankin",
             "genre": "Crime",
@@ -362,7 +364,7 @@
             "isAvailable": true
         },
         {
-            "id": "46",
+            "id": "3bc0a8eb-1378-43f6-aecf-459371c7e60e",
             "title": "Ashes of Winter",
             "author": "Kazuo Ishiguro",
             "genre": "Drama",
@@ -370,7 +372,7 @@
             "isAvailable": true
         },
         {
-            "id": "47",
+            "id": "3326dc91-3908-4d1e-a14a-8473077fcd97",
             "title": "The Lantern Keeper",
             "author": "Patrick Rothfuss",
             "genre": "Fantasy",
@@ -378,7 +380,7 @@
             "isAvailable": true
         },
         {
-            "id": "48",
+            "id": "edc30cd7-140c-4221-8dc7-ee3bb53b1df3",
             "title": "Nightfall Manor",
             "author": "Shirley Jackson",
             "genre": "Horror",
@@ -386,7 +388,7 @@
             "isAvailable": true
         },
         {
-            "id": "49",
+            "id": "c9b03201-c27a-4e43-ba68-09b8f88e127b",
             "title": "Parallel Dreams",
             "author": "William Gibson",
             "genre": "Science Fiction",
@@ -394,7 +396,7 @@
             "isAvailable": true
         },
         {
-            "id": "50",
+            "id": "7acf7d7e-03ca-4ebb-bf71-fb812bb08188",
             "title": "The Secret Between Us",
             "author": "Jojo Moyes",
             "genre": "Romance",
@@ -402,7 +404,7 @@
             "isAvailable": true
         },
         {
-            "id": "51",
+            "id": "ae155a4a-0094-4f61-9452-262416170693",
             "title": "Edge of Justice",
             "author": "David Baldacci",
             "genre": "Crime",
@@ -410,7 +412,7 @@
             "isAvailable": true
         },
         {
-            "id": "52",
+            "id": "96167003-25d9-477b-b431-68ba60ad4833",
             "title": "The Forgotten Melody",
             "author": "Khaled Hosseini",
             "genre": "Drama",
@@ -418,7 +420,7 @@
             "isAvailable": true
         },
         {
-            "id": "53",
+            "id": "eb32c035-0a1d-47cc-a778-56d5f48aea3d",
             "title": "The Burning Sky",
             "author": "Wilbur Smith",
             "genre": "Adventure",
@@ -426,7 +428,7 @@
             "isAvailable": true
         },
         {
-            "id": "54",
+            "id": "269bec24-2586-4863-88a4-b9360cb4aa1d",
             "title": "The Seventh Door",
             "author": "Raymond Chandler",
             "genre": "Mystery",
@@ -434,7 +436,7 @@
             "isAvailable": true
         },
         {
-            "id": "55",
+            "id": "eb579748-0099-4197-988f-064b2391b16d",
             "title": "The Crimson Lake",
             "author": "Paula Hawkins",
             "genre": "Thriller",
@@ -442,7 +444,7 @@
             "isAvailable": true
         },
         {
-            "id": "56",
+            "id": "8a0c7837-56e7-4f73-a868-ce8058ca19b0",
             "title": "Winds of Tomorrow",
             "author": "Ursula K. Le Guin",
             "genre": "Science Fiction",
@@ -450,7 +452,7 @@
             "isAvailable": true
         },
         {
-            "id": "57",
+            "id": "072c44c6-fa6e-4538-9237-e6faaf35cd23",
             "title": "The Marble Tower",
             "author": "Neil Gaiman",
             "genre": "Fantasy",
@@ -458,7 +460,7 @@
             "isAvailable": true
         },
         {
-            "id": "58",
+            "id": "bf8b45ef-1d6d-406b-8307-449254c67df9",
             "title": "The Missing Hour",
             "author": "Gillian Flynn",
             "genre": "Mystery",
@@ -466,7 +468,7 @@
             "isAvailable": true
         },
         {
-            "id": "59",
+            "id": "2e1575cb-19a2-47c7-af15-09b74ded6224",
             "title": "The River of Glass",
             "author": "Clive Cussler",
             "genre": "Adventure",
@@ -474,7 +476,7 @@
             "isAvailable": true
         },
         {
-            "id": "60",
+            "id": "64e20007-b44a-4e65-910a-81f4968dd70d",
             "title": "Letters Never Sent",
             "author": "Danielle Steel",
             "genre": "Romance",
@@ -482,7 +484,7 @@
             "isAvailable": true
         },
         {
-            "id": "61",
+            "id": "502b1263-feab-4ff9-a9a3-42e06e290f2e",
             "title": "The Black Lantern",
             "author": "Clive Barker",
             "genre": "Horror",
@@ -490,7 +492,7 @@
             "isAvailable": true
         },
         {
-            "id": "62",
+            "id": "1c0198ba-eef8-4af5-82a4-98f9793d8870",
             "title": "Fragments of the Moon",
             "author": "George R.R. Martin",
             "genre": "Fantasy",
@@ -498,7 +500,7 @@
             "isAvailable": true
         },
         {
-            "id": "63",
+            "id": "cb74b57c-6b41-4380-bbec-d20c4d421595",
             "title": "The Quiet Suspect",
             "author": "Ruth Ware",
             "genre": "Crime",
@@ -506,7 +508,7 @@
             "isAvailable": true
         },
         {
-            "id": "64",
+            "id": "6dce0bb1-11ff-4e7a-8113-22c6be2241af",
             "title": "Beneath Hollow Hills",
             "author": "Anne Rice",
             "genre": "Horror",
@@ -514,7 +516,7 @@
             "isAvailable": true
         },
         {
-            "id": "65",
+            "id": "e42b4041-f910-4838-8ab2-120eb9fec90f",
             "title": "The Final Orbit",
             "author": "Andy Weir",
             "genre": "Science Fiction",
@@ -522,7 +524,7 @@
             "isAvailable": true
         },
         {
-            "id": "66",
+            "id": "aa0488d6-efed-4f8f-872d-e64d4902dbcf",
             "title": "When the Rain Stops",
             "author": "Sally Rooney",
             "genre": "Drama",
@@ -530,7 +532,7 @@
             "isAvailable": true
         },
         {
-            "id": "67",
+            "id": "082243ad-017d-40ee-b126-42ad9a6ebc86",
             "title": "The Painted Mask",
             "author": "Louise Penny",
             "genre": "Mystery",
@@ -538,7 +540,7 @@
             "isAvailable": true
         },
         {
-            "id": "68",
+            "id": "d58fe387-f0a1-4071-8d85-01512363dd06",
             "title": "Hearts in Winter",
             "author": "Debbie Macomber",
             "genre": "Romance",
@@ -546,7 +548,7 @@
             "isAvailable": true
         },
         {
-            "id": "69",
+            "id": "57d903d3-fa19-4c79-b8be-f1dd22e48114",
             "title": "The Steel Frontier",
             "author": "Jack London",
             "genre": "Adventure",
@@ -554,7 +556,7 @@
             "isAvailable": true
         },
         {
-            "id": "70",
+            "id": "8f701cb9-a815-4337-893b-00703210455f",
             "title": "The Fallen Throne",
             "author": "Terry Brooks",
             "genre": "Fantasy",
@@ -562,7 +564,7 @@
             "isAvailable": true
         },
         {
-            "id": "71",
+            "id": "df77d00b-b67b-481a-af8d-7c3f381a1e0c",
             "title": "Crimson Evidence",
             "author": "Karin Slaughter",
             "genre": "Crime",
@@ -570,7 +572,7 @@
             "isAvailable": true
         },
         {
-            "id": "72",
+            "id": "e8c48997-eb26-44ab-98d8-478f6402976c",
             "title": "The Vanishing Point",
             "author": "Harlan Coben",
             "genre": "Thriller",
@@ -578,7 +580,7 @@
             "isAvailable": true
         },
         {
-            "id": "73",
+            "id": "a12dc7fd-202c-4a93-83e0-b8dfe5010438",
             "title": "The Frozen Garden",
             "author": "Alice Sebold",
             "genre": "Drama",
@@ -586,7 +588,7 @@
             "isAvailable": true
         },
         {
-            "id": "74",
+            "id": "b8a7d583-2827-476d-99bb-198ce6058677",
             "title": "Stars Beyond Reach",
             "author": "Frank Herbert",
             "genre": "Science Fiction",
@@ -594,7 +596,7 @@
             "isAvailable": true
         },
         {
-            "id": "75",
+            "id": "886d7710-637b-400a-b5b6-3a9f2dd7d9b7",
             "title": "The Silver Compass",
             "author": "James Rollins",
             "genre": "Adventure",
@@ -602,7 +604,7 @@
             "isAvailable": true
         },
         {
-            "id": "76",
+            "id": "81da80eb-b673-4361-9633-1b442839f824",
             "title": "The Hidden Flame",
             "author": "Robin Hobb",
             "genre": "Fantasy",
@@ -610,7 +612,7 @@
             "isAvailable": true
         },
         {
-            "id": "77",
+            "id": "26c7bbef-67c9-45bb-a3d2-a2aa63d679c5",
             "title": "A Thousand Goodbyes",
             "author": "Cecelia Ahern",
             "genre": "Romance",
@@ -618,7 +620,7 @@
             "isAvailable": true
         },
         {
-            "id": "78",
+            "id": "daca719b-42a6-4065-9a56-65a85cf3023f",
             "title": "The Last Alibi",
             "author": "Scott Turow",
             "genre": "Crime",
@@ -626,7 +628,7 @@
             "isAvailable": true
         },
         {
-            "id": "79",
+            "id": "136229be-020e-471d-8aab-447bf854cf40",
             "title": "The Cursed Portrait",
             "author": "Dean Koontz",
             "genre": "Horror",
@@ -634,7 +636,7 @@
             "isAvailable": true
         },
         {
-            "id": "80",
+            "id": "83b691de-e6dc-47a5-95ba-330b0b04caff",
             "title": "The Midnight Archive",
             "author": "Carlos Ruiz Zafón",
             "genre": "Mystery",
@@ -642,7 +644,7 @@
             "isAvailable": true
         },
         {
-            "id": "81",
+            "id": "331f84eb-9e1e-4bbe-a5d4-53a13037e2be",
             "title": "Orbit of Ashes",
             "author": "Douglas Adams",
             "genre": "Science Fiction",
@@ -650,7 +652,7 @@
             "isAvailable": true
         },
         {
-            "id": "82",
+            "id": "02b77c7c-a706-4612-ac89-da7a72512e0a",
             "title": "The Amber Path",
             "author": "Patrick O'Brian",
             "genre": "Adventure",
@@ -658,7 +660,7 @@
             "isAvailable": true
         },
         {
-            "id": "83",
+            "id": "1da89ed6-e48c-4a7b-a803-03c14c646886",
             "title": "A Season of Silence",
             "author": "Fredrik Backman",
             "genre": "Drama",
@@ -666,7 +668,7 @@
             "isAvailable": true
         },
         {
-            "id": "84",
+            "id": "c6aa555a-6e98-41a5-849f-72636ebc8ad6",
             "title": "The Moonlit Harbor",
             "author": "Jasmine Guillory",
             "genre": "Romance",
@@ -674,7 +676,7 @@
             "isAvailable": true
         },
         {
-            "id": "85",
+            "id": "58ff52ab-b633-44d5-98ab-2c02fef0279c",
             "title": "The Hollow Crown",
             "author": "Joe Abercrombie",
             "genre": "Fantasy",
@@ -682,7 +684,7 @@
             "isAvailable": true
         },
         {
-            "id": "86",
+            "id": "2e699f6a-3429-4bd3-871a-0d57f4de76b9",
             "title": "The Last Passenger",
             "author": "Alex Michaelides",
             "genre": "Thriller",
@@ -690,7 +692,7 @@
             "isAvailable": true
         },
         {
-            "id": "87",
+            "id": "184b53af-812b-4238-83dc-ff5a62b6620a",
             "title": "The Sixth Signal",
             "author": "Liu Cixin",
             "genre": "Science Fiction",
@@ -698,7 +700,7 @@
             "isAvailable": true
         },
         {
-            "id": "88",
+            "id": "6a543461-1f01-4e76-91d4-7be7243f45d2",
             "title": "The Paper Bridge",
             "author": "Isabel Allende",
             "genre": "Drama",
@@ -706,7 +708,7 @@
             "isAvailable": true
         },
         {
-            "id": "89",
+            "id": "cd3cc840-67d8-44c4-a768-6f2d65ddb62a",
             "title": "The Shadow Trial",
             "author": "Tana French",
             "genre": "Crime",
@@ -714,7 +716,7 @@
             "isAvailable": true
         },
         {
-            "id": "90",
+            "id": "f00c3724-1309-4c7a-aeac-84fd99db5852",
             "title": "The Sapphire Forest",
             "author": "Ursula Vernon",
             "genre": "Fantasy",
@@ -722,7 +724,7 @@
             "isAvailable": true
         },
         {
-            "id": "91",
+            "id": "e90321cf-002d-45f5-bdd1-7589ac2e137b",
             "title": "The Last Summer Letter",
             "author": "Sarah Dessen",
             "genre": "Romance",
@@ -730,7 +732,7 @@
             "isAvailable": true
         },
         {
-            "id": "92",
+            "id": "ecc83750-6932-4c7b-acb6-bb7fa70c56fa",
             "title": "The Empty Station",
             "author": "Anthony Doerr",
             "genre": "Mystery",
@@ -738,7 +740,7 @@
             "isAvailable": true
         },
         {
-            "id": "93",
+            "id": "8f1c2e3c-3752-49d8-83e8-a8ee19e19367",
             "title": "The Red Horizon",
             "author": "Jon Krakauer",
             "genre": "Adventure",
@@ -746,7 +748,7 @@
             "isAvailable": true
         },
         {
-            "id": "94",
+            "id": "971708b1-90c4-47cc-912c-e4b3273be5c4",
             "title": "The Whispering Cellar",
             "author": "Joe Hill",
             "genre": "Horror",
@@ -754,7 +756,7 @@
             "isAvailable": true
         },
         {
-            "id": "95",
+            "id": "ad326fc5-0bca-4094-81ed-bc47357ff5bd",
             "title": "The Neon Frontier",
             "author": "Martha Wells",
             "genre": "Science Fiction",
@@ -762,7 +764,7 @@
             "isAvailable": true
         },
         {
-            "id": "96",
+            "id": "334ee70a-2dc3-4a14-950a-1a79b91b65d8",
             "title": "The Winter Guest",
             "author": "Hanya Yanagihara",
             "genre": "Drama",
@@ -770,7 +772,7 @@
             "isAvailable": true
         },
         {
-            "id": "97",
+            "id": "2fbb41f9-6f8c-4e31-9a6d-f30563039f9a",
             "title": "The Secret Harbor",
             "author": "Lucy Foley",
             "genre": "Mystery",
@@ -778,7 +780,7 @@
             "isAvailable": true
         },
         {
-            "id": "98",
+            "id": "1a606c26-5021-42e9-9a56-5cc4bd240006",
             "title": "The Golden Hourglass",
             "author": "S.A. Chakraborty",
             "genre": "Fantasy",
@@ -786,7 +788,7 @@
             "isAvailable": true
         },
         {
-            "id": "99",
+            "id": "6e4c90ec-0ab5-4429-81bd-66c41c3bfbe6",
             "title": "The Night Detective",
             "author": "Robert Crais",
             "genre": "Crime",
@@ -794,7 +796,7 @@
             "isAvailable": true
         },
         {
-            "id": "100",
+            "id": "5e3aecbf-9968-44f7-b357-d563006f08c1",
             "title": "The Last Light Between Us",
             "author": "Colleen Hoover",
             "genre": "Romance",
@@ -807,12 +809,12 @@
             "pages": 311,
             "title": "Star Wars Episode 1",
             "isAvailable": true,
-            "id": "Cl0ExPRS6QE"
+            "id": "72abc878-8059-4f03-8aff-6caffa2a4a79"
         }
     ],
     "magazines": [
         {
-            "id": "1",
+            "id": "7ce0a301-4941-4419-8a24-74e3540ec51e",
             "title": "Tech World",
             "issueNumber": 12,
             "category": "Technology",
@@ -820,7 +822,7 @@
             "isAvailable": true
         },
         {
-            "id": "2",
+            "id": "f054d1a2-282c-49d1-9894-88d2e64615ab",
             "title": "Tech World",
             "issueNumber": 11,
             "category": "Technology",
@@ -828,7 +830,7 @@
             "isAvailable": true
         },
         {
-            "id": "3",
+            "id": "29462614-c38f-4ef4-8eff-ff8871c7b270",
             "title": "Science Today",
             "issueNumber": 45,
             "category": "Science",
@@ -836,7 +838,7 @@
             "isAvailable": true
         },
         {
-            "id": "4",
+            "id": "3183c539-a60a-4f9c-a727-a583b8ebd514",
             "title": "Modern Finance",
             "issueNumber": 8,
             "category": "Economy",
@@ -844,7 +846,7 @@
             "isAvailable": true
         },
         {
-            "id": "5",
+            "id": "29fb38c5-2d8e-45d3-b6a9-d1aa667d18dd",
             "title": "Healthy Living",
             "issueNumber": 102,
             "category": "Health",
@@ -852,7 +854,7 @@
             "isAvailable": true
         },
         {
-            "id": "6",
+            "id": "56486795-6667-487a-9285-19c6c51e36e6",
             "title": "Nature Explorer",
             "issueNumber": 34,
             "category": "Environment",
@@ -860,7 +862,7 @@
             "isAvailable": false
         },
         {
-            "id": "7",
+            "id": "f01c1241-3ba7-47d1-9631-3533ef6d8d4f",
             "title": "Gamer's Edge",
             "issueNumber": 210,
             "category": "Gaming",
@@ -868,7 +870,7 @@
             "isAvailable": true
         },
         {
-            "id": "8",
+            "id": "5d4925a3-eed1-410e-ae45-48b07377c0b1",
             "title": "Auto Enthusiast",
             "issueNumber": 56,
             "category": "Automotive",
@@ -876,7 +878,7 @@
             "isAvailable": true
         },
         {
-            "id": "9",
+            "id": "f56eccec-1efd-4bff-b6f9-14843fb0b69d",
             "title": "Global Politics",
             "issueNumber": 15,
             "category": "Politics",
@@ -884,7 +886,7 @@
             "isAvailable": true
         },
         {
-            "id": "10",
+            "id": "4e54ed92-eb99-4d23-98b0-8a79e6deef4b",
             "title": "Creative Design",
             "issueNumber": 77,
             "category": "Art",
@@ -894,7 +896,7 @@
     ],
     "media": [
         {
-            "id": "1",
+            "id": "21b0f1c8-1a64-4851-add2-b2f51b7b6c3d",
             "type": "game",
             "title": "Shooting Star",
             "genre": "Action",
@@ -902,14 +904,14 @@
             "isAvailable": true
         },
         {
-            "id": "2",
+            "id": "46e19e57-2cda-4a78-b815-b8bcc726c09f",
             "type": "music_album",
             "artist": "Leo van Hal",
             "title": "Guitar heros",
             "isAvailable": true
         },
         {
-            "id": "3",
+            "id": "981c058b-233f-4769-8009-482aa8002200",
             "type": "movie",
             "title": "Learn Python",
             "genre": "comedy",
@@ -919,47 +921,34 @@
     ],
     "users": [
         {
-            "id": "101",
+            "id": "5cfc9043-08c6-4a2f-b51a-a16eef95853d",
             "name": "Maria Karlsson",
             "email": "maria@skola.se"
         },
         {
-            "id": "102",
+            "id": "7dc72592-e90a-4759-b7f7-68f4df36449e",
             "name": "Erik Ostlund",
             "email": "erik@skola.se"
         },
         {
             "name": "Dante",
             "email": "dante@gmail.com",
-            "id": "ZR6KBo5kCQA"
+            "id": "d51568aa-8526-4079-9107-67b8b7d3a886"
         },
         {
             "name": "Elias",
             "email": "elias@gmail.com",
-            "id": "DSlcwyvE4Ac"
+            "id": "274c93a1-d6d8-4bd6-9cdb-a87f267cd421"
         },
         {
             "name": "Benji",
             "email": "benji@gmail.com",
-            "id": "KaH7xaLroU0"
+            "id": "d511b2ec-cfd8-4818-ba7c-e7e1a976926a"
         },
         {
             "name": "Filip",
             "email": "filip@gmail.com",
-            "id": "MwZr5zQk1B0"
-        }
-    ],
-    "suspended": [
-        {
-            "id": "1",
-            "customer_id": "102"
-        },
-        {
-            "userName": "",
-            "userEmail": "",
-            "reason": "Han heter som han gör",
-            "customer_id": "MwZr5zQk1B0",
-            "id": "jn30GgXB9mI"
+            "id": "949f99d0-2677-421c-b086-a0e698f3edaf"
         }
     ]
 }
