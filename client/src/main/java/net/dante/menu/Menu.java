@@ -2,29 +2,33 @@ package net.dante.menu;
 
 import java.util.ArrayList;
 
-/* Klass som innehåller programmets huvudmeny */
-
 public class Menu implements Runnable {
 
+    private final String title;
+    private final int offset = 1;
     private final ArrayList<MenuItem> registry = new ArrayList<>();
+
+    public Menu(String title) {
+        this.title = title;
+    }
 
     public void registerMenuItem(MenuItem item) {
         registry.add(item);
     }
 
-    private void printMenu() {
-        IO.println("-----Bibliotekssystem-----");
+    public void printMenu() {
+        IO.println("-----" + title + "-----");
 
         for (int i = 0; i < registry.size(); i++) {
-            IO.println(i + ": " + registry.get(i).getDescription());
+            IO.println((i + offset) + ": " + registry.get(i).getDescription());
         }
     }
 
-    private void handleInput() {
+    public void handleInput() {
         IO.print("Välj ett alternativ: ");
 
         try {
-            int input = Integer.parseInt(IO.readln());
+            int input = Integer.parseInt(IO.readln()) - offset;
 
             if (input < 0 || input >= registry.size()) {
                 IO.println("Ogiltigt val.");
@@ -40,9 +44,7 @@ public class Menu implements Runnable {
     }
 
     public void run() {
-        while (true) {
-            printMenu();
-            handleInput();
-        }
+        printMenu();
+        handleInput();
     }
 }

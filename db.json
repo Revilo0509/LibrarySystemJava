@@ -1,0 +1,204 @@
+{
+  "books" : [ {
+    "title" : "Ringo with License to Please",
+    "available" : true,
+    "author" : "Daniel Harper",
+    "genre" : "Crime",
+    "pages" : 450,
+    "id" : "5f81b662-ac68-5a40-81be-21cec76aec43"
+  }, {
+    "title" : "Ringo Can Read",
+    "available" : true,
+    "author" : "Daniel Harper",
+    "genre" : "Drama",
+    "pages" : 250,
+    "id" : "f9e15cdb-ab28-5486-98b9-c97f26059199"
+  }, {
+    "title" : "The Silent Witness",
+    "available" : true,
+    "author" : "Elias Thorne",
+    "genre" : "Crime",
+    "pages" : 320,
+    "id" : "46476ba7-3077-5f8f-9dd3-aee85b29f2c9"
+  }, {
+    "title" : "Shadows in the Fog",
+    "available" : true,
+    "author" : "Sarah Jenkins",
+    "genre" : "Mystery",
+    "pages" : 410,
+    "id" : "d3a39668-a2f3-5786-9abc-a973bf72bc78"
+  }, {
+    "title" : "Beyond the Horizon",
+    "available" : true,
+    "author" : "Marcus Vane",
+    "genre" : "Adventure",
+    "pages" : 380,
+    "id" : "5e36c3bd-0aaf-524b-b966-2acc78c56be4"
+  }, {
+    "title" : "Love in Autumn",
+    "available" : true,
+    "author" : "Elena Rossi",
+    "genre" : "Romance",
+    "pages" : 275,
+    "id" : "e873ad85-8cd9-5dab-87c1-8d3a53de161a"
+  }, {
+    "title" : "The Last Kingdom",
+    "available" : true,
+    "author" : "Julian Blackwood",
+    "genre" : "Fantasy",
+    "pages" : 520,
+    "id" : "17158208-9f8e-5311-ac3f-66716e477d60"
+  }, {
+    "title" : "Midnight Streets",
+    "available" : true,
+    "author" : "Victor Cross",
+    "genre" : "Thriller",
+    "pages" : 340,
+    "id" : "0b53df90-a46c-54e2-bad5-9bf96104d602"
+  }, {
+    "title" : "The Hidden Code",
+    "available" : true,
+    "author" : "Aria Sterling",
+    "genre" : "Science Fiction",
+    "pages" : 460,
+    "id" : "32d16556-7581-5b16-837f-85012229111a"
+  }, {
+    "title" : "Broken Promises",
+    "available" : true,
+    "author" : "Liam O'Connor",
+    "genre" : "Drama",
+    "pages" : 290,
+    "id" : "2e510833-547f-5c42-85b1-28629d63d5f6"
+  }, {
+    "title" : "Fixed Book",
+    "available" : true,
+    "author" : "T",
+    "genre" : "T",
+    "pages" : 2,
+    "id" : "a144063b-0566-4a96-a0c6-273642141798"
+  }, {
+    "title" : "ugiygfre",
+    "available" : true,
+    "author" : "fgrejukhigrtfg",
+    "genre" : "ghrfjhylbgvgtrf",
+    "pages" : 200,
+    "id" : "967b839e-a23d-4011-ae9a-3d9c8e1ae9c5"
+  }, {
+    "title" : "aaaaaaaaaa",
+    "available" : true,
+    "author" : "aaaaaaaaaaaa",
+    "genre" : "aaaaaa",
+    "pages" : 1000,
+    "id" : "c4cb1a88-f04f-4d7e-a237-96523683b7a0"
+  }, {
+    "title" : "bbb",
+    "available" : true,
+    "author" : "b",
+    "genre" : "bb",
+    "pages" : 10,
+    "id" : "a2790912-25e4-46fb-8cf0-6030565faf36"
+  } ],
+  "magazines" : [ {
+    "title" : "Tech World",
+    "available" : true,
+    "issueNumber" : 12,
+    "publishedYear" : 2025,
+    "category" : "Technology",
+    "id" : "8a0a05ec-adee-5ca3-9723-db021ca0578d"
+  }, {
+    "title" : "Science Today",
+    "available" : true,
+    "issueNumber" : 45,
+    "publishedYear" : 2024,
+    "category" : "Science",
+    "id" : "d3b40a53-1271-59b3-9db5-9fb91e8bc2e9"
+  }, {
+    "title" : "Modern Finance",
+    "available" : true,
+    "issueNumber" : 8,
+    "publishedYear" : 2025,
+    "category" : "Economy",
+    "id" : "0da6f716-967a-5fc3-94ce-5e39c40d7429"
+  }, {
+    "title" : "Healthy Living",
+    "available" : true,
+    "issueNumber" : 102,
+    "publishedYear" : 2023,
+    "category" : "Health",
+    "id" : "6a939bca-d72c-5f2e-b87f-d54af01ab03c"
+  }, {
+    "title" : "Nature Explorer",
+    "available" : false,
+    "issueNumber" : 34,
+    "publishedYear" : 2024,
+    "category" : "Environment",
+    "id" : "32311b54-98c5-5a7c-bc01-3ff1debf3096"
+  }, {
+    "title" : "Gamer's Edge",
+    "available" : true,
+    "issueNumber" : 210,
+    "publishedYear" : 2025,
+    "category" : "Gaming",
+    "id" : "fe07681b-8959-5d90-b00b-0c18fa6fad0b"
+  }, {
+    "title" : "Auto Enthusiast",
+    "available" : true,
+    "issueNumber" : 56,
+    "publishedYear" : 2024,
+    "category" : "Automotive",
+    "id" : "0305d363-1c8d-5872-8cee-ba793f18e869"
+  }, {
+    "title" : "Global Politics",
+    "available" : true,
+    "issueNumber" : 15,
+    "publishedYear" : 2025,
+    "category" : "Politics",
+    "id" : "57360152-ac11-5f8a-8925-c72f57d92391"
+  }, {
+    "title" : "Creative Design",
+    "available" : true,
+    "issueNumber" : 77,
+    "publishedYear" : 2024,
+    "category" : "Art",
+    "id" : "643778c3-047e-5cfd-828e-f8f986a4277f"
+  } ],
+  "users" : [ {
+    "name" : "Maria Karlsson",
+    "email" : "maria@skola.se",
+    "id" : "45e6102a-0e88-5cfd-9391-0c8e6e473b0e",
+    "suspended" : false,
+    "suspension" : null
+  }, {
+    "name" : "Erik Ostlund",
+    "email" : "erik@skola.se",
+    "id" : "e063bb16-cc76-558b-9f94-afe212747cda",
+    "suspended" : false,
+    "suspension" : null
+  }, {
+    "name" : "Dante",
+    "email" : "dante@gmail.com",
+    "id" : "7357d28a-a611-5efd-ae6e-a550a5b95487",
+    "suspended" : true,
+    "suspension" : {
+      "reason" : "HAHA"
+    }
+  }, {
+    "name" : "Elias",
+    "email" : "elias@gmail.com",
+    "id" : "19890105-81dd-55fc-a202-914fbf1e88a1",
+    "suspended" : false,
+    "suspension" : null
+  }, {
+    "name" : "Benji",
+    "email" : "benji@gmail.com",
+    "id" : "3cd43d89-ab0b-54ac-811c-1f4bb9b3fab6",
+    "suspended" : false,
+    "suspension" : null
+  }, {
+    "name" : "Filip",
+    "email" : "filip@gmail.com",
+    "id" : "d8aba7d2-e28d-57a6-917c-e52a155cc2f8",
+    "suspended" : false,
+    "suspension" : null
+  } ]
+}
