@@ -1,26 +1,20 @@
 package net.dante;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-
 /*Klass som innehåller all logik i hur programmet fungerar.
 Innehåller metoder som hämtar data, listar data, och lägger till data i systemet. */
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.google.gson.Gson;
-import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
-
-import kong.unirest.core.HttpRequest;
 import kong.unirest.core.HttpResponse;
 import kong.unirest.core.Unirest;
 import kong.unirest.core.UnirestException;
 import net.dante.items.BookItem;
 import net.dante.items.MagazineItem;
+import net.dante.user.User;
 
-public class LibraryManager {
+public class Library {
     // Variabels
 
     private ArrayList<BookItem> books = new ArrayList<>();
@@ -33,7 +27,7 @@ public class LibraryManager {
     // Server URL handling
     private String serverUrl;
 
-    public LibraryManager(String serverUrl) {
+    public Library(String serverUrl) {
         this.serverUrl = serverUrl;
     }
 
@@ -187,7 +181,7 @@ public class LibraryManager {
         
         String newSuspendedId = String.valueOf(suspendedUsers.size() + 1); // TODO: fix this, auto id is ok
         
-        boolean removed = users.removeIf(u -> u.getUserId().equals(newUserIdForSuspended)); // Removes newly suspended user from regular user-array (beautiful lambda again)
+        boolean removed = users.removeIf(user -> user.getId().equals(newUserIdForSuspended)); // Removes newly suspended user from regular user-array (beautiful lambda again)
 
         if (!removed) {
             IO.println("Ingen användare med det ID:t hittades.");

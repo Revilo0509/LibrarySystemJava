@@ -23,7 +23,6 @@
             <groupId>com.konghq</groupId>
             <artifactId>unirest-java-core</artifactId>
             <version>4.8.1</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 

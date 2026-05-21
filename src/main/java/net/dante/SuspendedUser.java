@@ -1,5 +1,7 @@
 package net.dante;
 
+import net.dante.user.User;
+
 public class SuspendedUser {
 
     // Variables for user
@@ -12,9 +14,9 @@ public class SuspendedUser {
     // Constructor for user
     public SuspendedUser(String suspendedId, User user, String reason) {
         this.suspendedId = suspendedId;
-        this.userId = user.getUserId();
-        this.userName = user.getUserName();
-        this.userEmail = user.getUserEmail();
+        this.userId = user.getId();
+        this.userName = user.getName();
+        this.userEmail = user.getEmail();
         this.reason = reason;
     }
 

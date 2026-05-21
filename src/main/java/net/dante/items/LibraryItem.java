@@ -1,4 +1,4 @@
-package net.dante;
+package net.dante.items;
 
 /*En parent-klass för BookItem och MagazineItem, dvs superklassen.
 Innehåller alla gemensamma parametrar och variabler för klasserna.
@@ -35,8 +35,8 @@ public abstract class LibraryItem {
     // Setters
 
     // Planned to be linked to borrowItem() and returnItem() in the future
-    public void setAvailable(boolean isAvailable) {
-        this.isAvailable = isAvailable;
+    public void setAvailable(boolean availability) {
+        this.isAvailable = availability;
     }
 
 }
