@@ -951,10 +951,9 @@
     ],
     "suspended": [
         {
-            "userName": "",
-            "userEmail": "",
+            "name": "",
+            "email": "",
             "reason": "Han heter som han gör",
-            "customer_id": "MwZr5zQk1B0",
             "id": "jn30GgXB9mI"
         }
     ]
