@@ -8,6 +8,8 @@ public class Main {
 
         StartMenu Menu = new StartMenu();
 
+        Menu.FetchAll();
+
         while (true) {
             Menu.ShowMenu();
         }

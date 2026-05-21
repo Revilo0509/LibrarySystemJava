@@ -1,8 +1,5 @@
 package net.dante;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-
 /*Klass som innehåller all logik i hur programmet fungerar.
 Innehåller metoder som hämtar data, listar data, och lägger till data i systemet. */
 
@@ -10,10 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
-import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 
-import kong.unirest.core.HttpRequest;
 import kong.unirest.core.HttpResponse;
 import kong.unirest.core.Unirest;
 import kong.unirest.core.UnirestException;
@@ -21,7 +16,6 @@ import net.dante.items.BookItem;
 import net.dante.items.MagazineItem;
 
 public class LibraryManager {
-    // Variabels
 
     private ArrayList<BookItem> books = new ArrayList<>();
     private ArrayList<MagazineItem> magazines = new ArrayList<>();
@@ -30,54 +24,40 @@ public class LibraryManager {
 
     private Gson gson = new Gson();
 
-    // Server URL handling
+    // ===================
+    // SERVER URL HANDLING
+    // ===================
     private String serverUrl;
 
     public LibraryManager(String serverUrl) {
         this.serverUrl = serverUrl;
     }
 
-    // 1. Method for fetching books
-    public void fetchBooks() {
-        HttpResponse<String> response;
-        try {
-            response = Unirest.get(serverUrl + "/books").asString();
-            String responseBody = response.getBody();
-            List<BookItem> fetchedBooks = gson.fromJson(responseBody, new TypeToken<List<BookItem>>() {
-            }.getType());
-            books.addAll(fetchedBooks); // adds all the books from the fetch
-            IO.println("Hämtade data för böcker\n");
-        } catch (UnirestException e) {
-            IO.println("Ett fel uppstod vid hämtning av data: " + e.getLocalizedMessage() + "\n");
-        }
-    }
+    // ================
+    // LISTING METHODS
+    // ================
 
-    // 2. Method for fetching magazines
-    public void fetchMagazines() {
-        HttpResponse<String> response;
-        try {
-            response = Unirest.get(serverUrl + "/magazines").asString();
-            String responseBody = response.getBody();
-            List<MagazineItem> fetchedMagazines = gson.fromJson(responseBody, new TypeToken<List<MagazineItem>>() {
-            }.getType());
-            magazines.addAll(fetchedMagazines);
-            IO.println("Hämtade data för magasin\n");
-        } catch (UnirestException e) {
-            IO.println("Ett fel uppstod vid hämtning av data: " + e.getLocalizedMessage() + "\n");
-        }
-    }
+     // print for every item in arrays (beautiful lambda expressions :D)
 
-    // 3. List all books & magazines
     public void listLibraryItems() {
 
-        // print for every book and magazine in array (beautiful lambda expression :D)
         IO.println("\nBöcker:");
         books.forEach(b -> IO.println(b));
         IO.println("\nMagasin:");
         magazines.forEach(m -> IO.println(m));
     }
 
-    // 4. Method for adding item to library
+    public void listAllUsers() {
+        IO.println("\nAnvändare:");
+        users.forEach(u -> IO.println(u));
+        IO.println("\nAvstängda användare:");
+        suspendedUsers.forEach(su -> IO.println(su));
+    }
+
+    // ============
+    // ADD METHODS
+    // ============
+
     // TODO: Add checks so program doesn't crash when invalid inputs
     public void addLibraryItem() {
 
@@ -92,7 +72,6 @@ public class LibraryManager {
                         2. Magasin
                     """);
 
-            // String for user choice
             String userChoice = IO.readln();
 
             // Check if book or magazine, if not valid input ask again
@@ -110,8 +89,6 @@ public class LibraryManager {
                 IO.println("Ogiltigt val, försök igen.");
             }
         }
-
-        // TODO: Move add logic to own class
 
         if (itemType == true) {
 
@@ -133,7 +110,8 @@ public class LibraryManager {
 
             BookItem newBook = new BookItem(newBookId, newBookTitle, true, newBookAuthor, newBookGenre,
                     newBookPages);
-            books.add(newBook);
+            books.add(newBook); //local
+            uploadBook(newBook); // upload to server
 
         } else if (itemType == false) {
 
@@ -150,17 +128,17 @@ public class LibraryManager {
 
             IO.println("Kategori: ");
             String newMagazineCategory = IO.readln();
-
+            
             String newMagazineId = String.valueOf(magazines.size() + 1); // TODO: check if fetched prior to creating id
 
             MagazineItem newMagazine = new MagazineItem(newMagazineId, newMagazineTitle, true, newMagazineIssueNumber,
                     newMagazinePublicationYear, newMagazineCategory);
-            magazines.add(newMagazine);
+            magazines.add(newMagazine); // local
+            uploadMagazine(newMagazine); // upload to server
 
         }
     }
 
-    // 5. Method for adding user to system
     public void addUser() {
 
         IO.println("Användarnamn: ");
@@ -169,14 +147,11 @@ public class LibraryManager {
         IO.println("Användarens mejladress: ");
         String newUserEmail = IO.readln();
 
-        String newUserId = String.valueOf(users.size() + 101); // TODO: check if fetched prior to creating id
-
-        User newUser = new User(newUserId, newUserName, newUserEmail);
-        users.add(newUser); // add user in local list
-        uploadUser(newUser); // add user to server
+        User newUser = new User(null, newUserName, newUserEmail);
+        users.add(newUser); // local
+        uploadUser(newUser); // upload to server
     }
 
-    // 6. Method for adding user to system
     public void suspendUser() {
 
         IO.println("ID på användaren som ska stängas av: ");
@@ -185,8 +160,6 @@ public class LibraryManager {
         IO.println("Anledning: ");
         String newSuspendedUserReason = IO.readln();
         
-        String newSuspendedId = String.valueOf(suspendedUsers.size() + 1); // TODO: fix this, auto id is ok
-        
         boolean removed = users.removeIf(u -> u.getUserId().equals(newUserIdForSuspended)); // Removes newly suspended user from regular user-array (beautiful lambda again)
 
         if (!removed) {
@@ -194,26 +167,42 @@ public class LibraryManager {
             return;
         }
 
-        SuspendedUser newSuspendedUser = new SuspendedUser(newSuspendedId, new User(newUserIdForSuspended, "", ""), newSuspendedUserReason);
+        SuspendedUser newSuspendedUser = new SuspendedUser(null, new User(newUserIdForSuspended, "", ""), newSuspendedUserReason);
         suspendedUsers.add(newSuspendedUser);
-    }
-
-    
-    // 7. List all users & suspended users
-    public void listAllUsers() {
-
-        // print for every user and suspended user in array (beautiful lambda expression  (again, again) :D)
-        IO.println("\nAnvändare:");
-        users.forEach(u -> IO.println(u));
-        IO.println("\nAvstängda användare:");
-        suspendedUsers.forEach(su -> IO.println(su));
+        uploadSuspendedUser(newSuspendedUser);
     }
 
     // ==================================
-    // UPLOAD TO SERVER METHODS AND STUFF
+    // FETCH METHODS
     // ==================================
 
-    // fetch all users from server
+    public void fetchBooks() {
+        HttpResponse<String> response;
+        try {
+            response = Unirest.get(serverUrl + "/books").asString();
+            String responseBody = response.getBody();
+            List<BookItem> fetchedBooks = gson.fromJson(responseBody, new TypeToken<List<BookItem>>() {
+            }.getType());
+            books.addAll(fetchedBooks); // adds all the books from the fetch
+            IO.println("Hämtade data för böcker\n");
+        } catch (UnirestException e) {
+            IO.println("Ett fel uppstod vid hämtning av data: " + e.getLocalizedMessage() + "\n");
+        }
+    }
+
+    public void fetchMagazines() {
+        HttpResponse<String> response;
+        try {
+            response = Unirest.get(serverUrl + "/magazines").asString();
+            String responseBody = response.getBody();
+            List<MagazineItem> fetchedMagazines = gson.fromJson(responseBody, new TypeToken<List<MagazineItem>>() {
+            }.getType());
+            magazines.addAll(fetchedMagazines);
+            IO.println("Hämtade data för magasin\n");
+        } catch (UnirestException e) {
+            IO.println("Ett fel uppstod vid hämtning av data: " + e.getLocalizedMessage() + "\n");
+        }
+    }
     
     public void fetchUsers() {
         HttpResponse<String> response;
@@ -229,12 +218,36 @@ public class LibraryManager {
         }
     }
 
-    // helper method to add any object to server (using Object data for flexibility)
+    // ===============
+    // UPLOAD METHODS
+    // ===============
+    
+    public void uploadBook(BookItem book) {
+        toJson("/books", book);
+    }
+
+    public void uploadMagazine(MagazineItem magazine) {
+        toJson("/magazines", magazine);
+    }
+
+    public void uploadUser(User user) {
+        toJson("/users", user);
+    }
+
+    public void uploadSuspendedUser(SuspendedUser suspendedUser) {
+        toJson("/suspended", suspendedUser);
+    }
+    
+    // ==================================
+    // HELPER METHODS AND OTHER STUFF
+    // ==================================
+
+    // helper for uploading stuff
     private void toJson(String endpoint, Object data) {
         try {
             String json = gson.toJson(data);
             Unirest.post(serverUrl + endpoint)
-            .header("placeholder", "application/json") //TODO: replace placeholder with actual text
+            .header("Content-type", "application/json")
             .body(json)
             .asString();
 
@@ -242,11 +255,4 @@ public class LibraryManager {
             e.printStackTrace();
         }
     }
-
-    //upload methods
-    public void uploadUser(User user) {
-        fetchUsers(); // fetch users before adding local ones to server
-        toJson("/users", user);
-    }
-
 }

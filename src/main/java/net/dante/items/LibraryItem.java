@@ -1,4 +1,4 @@
-package net.dante;
+package net.dante.items;
 
 /*En parent-klass för BookItem och MagazineItem, dvs superklassen.
 Innehåller alla gemensamma parametrar och variabler för klasserna.

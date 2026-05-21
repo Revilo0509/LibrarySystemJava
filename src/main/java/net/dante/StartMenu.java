@@ -6,7 +6,15 @@ public class StartMenu {
 
     LibraryManager manager = new LibraryManager("http://localhost:3000");
 
+    public void FetchAll() {
+        manager.fetchBooks();
+        manager.fetchMagazines();
+        manager.fetchUsers();
+        //manager.fetchSuspendedUsers();
+    }
+
     public void ShowMenu() {
+
         IO.println("""
                         -----Biblioketsystem-----
                         1. Hämta data för samtliga böcker
