@@ -218,6 +218,20 @@ public class LibraryManager {
         }
     }
 
+    public void fetchSuspendedUsers() {
+        HttpResponse<String> response;
+        try {
+            response = Unirest.get(serverUrl + "/suspended").asString();
+            String responseBody = response.getBody();
+            List<SuspendedUser> fetchedSuspendedUsers = gson.fromJson(responseBody, new TypeToken<List<SuspendedUser>>() {
+            }.getType());
+            suspendedUsers.addAll(fetchedSuspendedUsers);
+            IO.println("Hämtade data för users\n");
+        } catch (UnirestException e) {
+            IO.println("Ett fel uppstod vid hämtning av data: " + e.getLocalizedMessage() + "\n");
+        }
+    }
+
     // ===============
     // UPLOAD METHODS
     // ===============

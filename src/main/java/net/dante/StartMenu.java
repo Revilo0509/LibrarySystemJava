@@ -10,7 +10,7 @@ public class StartMenu {
         manager.fetchBooks();
         manager.fetchMagazines();
         manager.fetchUsers();
-        //manager.fetchSuspendedUsers();
+        manager.fetchSuspendedUsers();
     }
 
     public void ShowMenu() {
